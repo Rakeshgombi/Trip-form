@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Otomanopee+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+  background: #000;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./background.jpg") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.container {
+  width: 80%;
+  min-height: 90vh;
+  padding: 10px;
+  margin: 0 auto;
+  /* background: #292929; */
+}
+
+.container h3,
+.container p {
+  font-family: 'Otomanopee One', sans-serif;
+  text-align: center;
+  margin: 1rem;
+}
+
+.container .confirmation {
+  font-family: 'Otomanopee One', sans-serif;
+  text-align: center;
+  margin: 1rem;
+  color: rgb(127, 255, 195);
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border-radius: 4px;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  width: 60%;
+  outline: none;
+  border: 1px solid rgba(204, 204, 204, 0.589);
+  /* border: none; */
+  background: rgba(0, 0, 0, 0.514);
+  color: #ccc;
+  -moz-outline-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  -moz-outline-radius: 4px;
+  /* outline: 2px solid rgb(71, 187, 255); */
+  box-shadow: 0px 0px 8px rgb(71, 187, 255);
+  border: rgb(71, 187, 255);
+  background: rgba(0, 0, 0, 0.767);
+}
+
+.gender-group {
+  display: flex;
+  /* width: 80%; */
+  width: 60%;
+  align-items: center;
+  justify-content: start;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.514);
+  border-radius: 4px;
+  border: 1px solid rgba(204, 204, 204, 0.589);
+  color: #aaa;
+}
+
+label {
+  display: block;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0 3px;
+  font-weight: bolder;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin: 0 2px;
+  width: fit-content;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group .btn {
+  background: none;
+  color: #00a2ff;
+  border: 1px solid #00a2ff;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  margin: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.btn-group .btn:hover {
+  background: #00a2ff;
+  color: #fff;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fork {
+  width: 180px;
+  height: 180px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  top: -100px;
+  right: -100px;
+  transform: rotate(45deg);
+  background: #ffffff;
+  animation: bg-change 1.5s ease-in infinite;
+}
+
+@keyframes bg-change {
+
+  0%,
+  100% {
+    background: #ffffff;
+  }
+
+  50% {
+    background-color: #ffffffd2;
+  }
+}
+
+.fork .logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* display: inline-block; */
+  z-index: 1000;
+}
+
+.fork .logo a {
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  /* margin-top: 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid rgb(109, 109, 109);
+  color: #cfcfcf;
+  background-color: #292929;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li {
+  padding: 10px 5px;
+}
+
+footer ul a {
+  padding: 5px;
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 1.3rem;
+}
+
+footer ul a:hover {
+  text-decoration: underline 1px #fff;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 100%;
+  }
+
+  .container h3 {
+    font-size: 1.3rem;
+  }
+
+  .container p {
+    font-size: 0.7rem;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  .gender-group {
+    width: 90%;
+  }
+}
